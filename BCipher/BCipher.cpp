@@ -33,5 +33,6 @@ void BCipher::createConnections()
 		stackedWidget->setCurrentWidget(decryptionPage);
 	});
 	connect(informationBtn, &QPushButton::clicked, [=] {
+		stackedWidget->setCurrentWidget(informationPage);
 	});
 }

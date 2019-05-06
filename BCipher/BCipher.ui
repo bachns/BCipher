@@ -19,21 +19,6 @@
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QGridLayout" name="gridLayout">
-    <property name="leftMargin">
-     <number>10</number>
-    </property>
-    <property name="topMargin">
-     <number>10</number>
-    </property>
-    <property name="rightMargin">
-     <number>10</number>
-    </property>
-    <property name="bottomMargin">
-     <number>10</number>
-    </property>
-    <property name="spacing">
-     <number>10</number>
-    </property>
     <item row="0" column="0">
      <layout class="QVBoxLayout" name="verticalLayout">
       <property name="spacing">
@@ -171,6 +156,24 @@
      <widget class="QStackedWidget" name="stackedWidget">
       <widget class="EncryptionWidget" name="encryptionPage"/>
       <widget class="DecryptionWidget" name="decryptionPage"/>
+      <widget class="QWidget" name="informationPage">
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0">
+         <widget class="QPlainTextEdit" name="plainTextEdit">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="plainText">
+           <string>BCipher 1.0.1, 2019
+Công cụ mã hóa các file dữ liệu vừa và nhỏ. 
+Thuật toán sử dụng AES có chiều dài khóa 256 và phương thức kiểu CFB. 
+--
+(C) Nguyễn Sỹ Bách, bachns.dev@gmail.com</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
      </widget>
     </item>
    </layout>
